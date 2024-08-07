@@ -2,6 +2,8 @@ from flask import Flask, request, jsonify, redirect
 import os
 import base64
 import urllib.parse
+from dotenv import load_dotenv
+
 
 app = Flask(__name__)
 
@@ -53,4 +55,5 @@ def saml_relay():
         return jsonify({"error": str(e)}), 400
 
 if __name__ == '__main__':
+    load_dotenv()
     app.run(debug=True, host='0.0.0.0', port=3000)
