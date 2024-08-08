@@ -10,7 +10,8 @@ __pycache__/
 .Python
 env/
 venv/
-certificate/
+certificates/
+saml_assertions/
 ENV/
 build/
 develop-eggs/
